@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
 
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
 }
 
 header {
@@ -11,7 +16,6 @@ header {
     width: 100%;
     height: 790px;
     padding: 0 165px;
-    border: 1px red solid;
     overflow: hidden;
 }
 
@@ -19,11 +23,73 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.button-nav {
+    width: 167px;
+    height: 56px;
+    background: #13183F;
+    border-radius: 28px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    transition: 1s;
+}
+
+.button-nav:hover {
+    background: #666CA3;
+    border: 0;
+    transition: 1s;
+}
+
+.intro {
+    width: 457px;
+    height: 359px;
+    margin-top: 185px;
+}
+
+.title-header {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 71px;
+    color: #13183F;
+}
+
+.description-header {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    margin: 29px 0 40px;
 }
 
 .button-header {
     width: 167px;
-    height: 56px;
+    height: 63px;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border: 0;
+    border-radius: 31.5px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+.button-header:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    transition: 1s;
 }
 
 .image-hero {
@@ -34,14 +100,93 @@ nav {
 
 }
 
+main {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 165px 140px;
+}
+
+.subtitle-main {
+    width: 350px;
+    height: 322px;
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px;
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    border-radius: 15px;
+    padding: 64px 38px 138px;
+    margin-bottom: 9px;
+}
+
+.topics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    height: 346px;
+    padding: 0 32px;
+    margin: 47px 0 9px;
+}
+
+.icon {
+    width: 56px;
+    height: 56px;
+}
+
+.topics h3 {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    color: #13183F;
+    margin-top: 32px;
+}
+
+.topics p {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #83869A;
+    margin: 24px 0;
+}
+
+.a-topic {
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F74780;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.a-topic:hover {
+    color: #FFA7C3;
+    transition: 1s;
+}
+
 footer {
     background-color: #13183F;
-    position: absolute;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 120px;
-    left: 0px;
-    top: 1725px;
     padding: 0 165px;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -60,4 +205,9 @@ footer button {
     font-size: 18px;
     line-height: 28px;
     color: #FFFFFF;
+}
+
+footer button:hover {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+    transition: 1s;
 }
