@@ -13,6 +13,7 @@ header {
     position: relative;
     margin: auto;
     max-width: 1440px;
+    min-width: 1240px;
     width: 100%;
     height: 790px;
     padding: 0 165px;
@@ -105,7 +106,7 @@ main {
     max-width: 1440px;
     margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
@@ -210,4 +211,132 @@ footer button {
 footer button:hover {
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
     transition: 1s;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        min-width: 750px;
+        height: 641px;
+        padding: 0 40px;
+    }
+
+    .button-nav {
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .intro {
+        width: 378px;
+        height: 284px;
+        margin-top: 99px;
+    }
+
+    .title-header {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .description-header {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .image-hero {
+        top: -92.13px;
+        right: -297.71px;
+    }
+
+    main {
+        padding: 0 40px 86px;
+    }
+
+    .subtitle-main {
+        width: 331px;
+        font-size: 24px;
+    }
+
+    .topics {
+        width: 331px;
+    }
+
+    .topics h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .topics p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .topics a {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    footer {
+        padding: 0 40px;
+    }
+
+    footer button {
+        width: 140px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    header {
+        min-width: 375px;
+        height: auto;
+        padding: 0 24px;
+    }
+
+    .intro {
+        width: 100%;
+        height: auto;
+        margin: 38px 0 46px;
+    }
+
+    .title-header {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .description-header {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .image-hero {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    main {
+        padding: 0 16px 80px;
+    }
+
+    .subtitle-main {
+        width: 343px;
+        height: 120px;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .topics {
+        width: 343px;
+    }
+
+    footer {
+        padding: 0 16px;
+    }
 }
